@@ -35,7 +35,6 @@ public class Login extends AppCompatActivity {
             public void onClick(View view) {
                 String getEmail=email.getEditText().getText().toString();
                 String pwd=pass.getEditText().getText().toString();
-                Toast.makeText(Login.this, getEmail+"  -  "+pwd, Toast.LENGTH_SHORT).show();
                 firebaseAuth.signInWithEmailAndPassword(getEmail,pwd)
                         .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                             @Override

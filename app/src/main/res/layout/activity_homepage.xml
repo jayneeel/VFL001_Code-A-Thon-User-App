@@ -1,39 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Homepage">
 
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/spinner"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
-        android:layout_width="wrap_content"
-        android:layout_centerInParent="true"
+    <LinearLayout
+        android:layout_width="1.7in"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
 
-        android:hint="Select Area">
-
-        <AutoCompleteTextView
-            android:id="@+id/AutoCompleteTextview"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="none" />
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="What you want to buy today ?"
+            android:fontFamily=""
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/itemQuery"
+                android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
-    </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Area">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnSearch"
-        android:layout_marginTop="40dp"
-        android:layout_below="@+id/spinner"
-        android:layout_centerHorizontal="true"
-        android:text="Search"
-        android:onClick="nxtRecyclerView"
-        android:fontFamily="@font/nunito"/>
+            <AutoCompleteTextView
+                android:id="@+id/area_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search ➜"
+            android:outlineAmbientShadowColor="#9AEC66"
+            android:layout_marginVertical="10dp"
+            android:textColor="#11E167"
+            android:textStyle="bold"
+            android:fontFamily="@font/nunito"
+            android:id="@+id/serachBtn"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
 
 
 
