@@ -1,4 +1,6 @@
 # VFL001_Code-A-Thon-User-App
 
-It's my Code-A-Thon Android Project.
-We made it top top-7!
+This is my Code-A-Thon Android Project developed under the theme Vocal For Local.
+This app focuses on Customer side Module.
+
+We made it top top-7! :)
